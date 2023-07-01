@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>7daysofcode</h1><br>
+    <h2>Sétimo dia</h2><br>
+    <a href="index.html">Clique para voltar</a>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator_display">
+                <p id="resultado"></p>
+            </div>
+            <div class="calculator_keys">
+            <table>
+                <tr>
+                    <td><button onclick="clear()" class="key--operator" data-action="clear">C</button></td>
+                    <td><button onclick="backspace()" class="key--operator" data-action="backspace"><</button></td>
+                    <td><button class="key--operator" data-action="divide">÷</button></td>
+                    <td><button class="key--operator" data-action="multiply">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNum('7')" class="key--operator" data-action="clear">7</button></td>
+                    <td><button onclick="insertNum('8')" class="key--operator" data-action="backspace">8</button></td>
+                    <td><button onclick="insertNum('9')" class="key--operator" data-action="divide">9</button></td>
+                    <td><button onclick="insertNum('+')" class="key--operator" data-action="multiply">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNum('4')" class="key--operator" data-action="clear">4</button></td>
+                    <td><button onclick="insertNum('5')" class="key--operator" data-action="backspace">5</button></td>
+                    <td><button onclick="insertNum('6')" class="key--operator" data-action="divide">6</button></td>
+                    <td><button onclick="insertNum('-')" class="key--operator" data-action="multiply">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="insertNum('1')" class="key--operator" data-action="clear">1</button></td>
+                    <td><button onclick="insertNum('2')" class="key--operator" data-action="backspace">2</button></td>
+                    <td><button onclick="insertNum('3')" class="key--operator" data-action="divide">3</button></td>
+                    <td rowspan="2"><button id="equal-btn" class="key--equal" data-action="calculate">=</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button id="zero-btn" class="key--operator" data-action="clear">0</button></td>
+                    <td><button class="key--operator" data-action="backspace">.</button></td>
+                </tr>
+            </table>     
+           </div>
+       </div>
+    </div>
+    <script src="js/scriptday7.js"></script>
+</body>
+</html>
